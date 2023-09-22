@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS</title>
+</head>
+<!-- font family anton from google fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap"> 
+<!-- just out link:css and enter , the format of adding link is coming -->
+<link rel="stylesheet" href="css/style.css">     <!--inside the css folder, so use css/filename-->
+<style>
+    /* css reset */
+        body{
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/training-828741_1280.jpg');
+            font-family: 'Anton', sans-serif; /*full body font is changed to anton*/
+        }
+        .left{
+            border: 0px solid rgb(241, 143, 143);
+            display: inline-block;
+            left: 30px;
+            top: 20px;
+        }
+        .left img{
+            width: 100px;
+            filter: invert(100%);   /*this is to convert black img to white*/
+        }
+        .left div{
+            text-align: center;
+        }
+        .mid{
+            border: 10px solid rgb(195, 241, 26);
+            display: block;
+            width: 45%;
+            position: absolute;
+            left: 15px;
+            right: 15px;
+            top: 20px;
+            margin: auto; /*auto is for centre position*/
+        }
+        .right{
+           display: inline-block;
+            border: 0px solid rgb(113, 173, 241);
+            display: inline-block;
+            position: absolute;
+            right: 32px;
+            top: 20px;
+        }
+        .navbar{
+            display: inline-block;
+            
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar li a{
+            color: azure;
+            text-decoration: none;
+            padding: 20px 23px;
+        }
+        .navbar li a:hover, .navbarli a.active{
+            text-decoration: underline;
+            color: rgb(15, 5, 75);
+            background-color: blanchedalmond;
+            padding: 2px;
+        }
+        .btn{
+            margin: 0px 9px;
+            color: wheat;
+            background-color: black;
+            padding: 3px 5px;
+            border: 8px solid rgb(223, 243, 132);
+            border-radius: 12px;
+            cursor: pointer;
+            font-family: 'Anton', sans-serif;
+        }
+        .btn:hover{
+            background-color: grey;
+
+        }
+        .container{
+            border: 2px solid white;
+            margin: 100px 40px 30px 40px;
+            padding:60px;
+            width: 20%;
+            border-radius: 9px;
+        }
+        .formgroup input{
+            
+            text-align: center;
+            display: block;
+            width: 200px;
+            padding: 6px;
+            border: 2px solid blue;
+            margin: 3px auto;
+            font-size: 20px;
+            border-radius: 5px;
+            font-family: 'Anton', sans-serif;
+            cursor: pointer;
+        }
+       
+        .container h4{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            margin: 1px auto;
+            width: 150px;
+        }
+</style>
+<body>
+<header class="header">
+    <!-- left box is for logo -->
+    <div class="left">
+       <img src="img/gym-1048852_1280.png" alt="">
+        <div>
+            FITNESS
+        </div>
+    </div>
+    <!-- mid box is for navigation -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fitness calculator</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+    <!-- right box for buttons -->
+    <div class="right">
+      <button class="btn">call us now</button>
+      <button class="btn">email us</button>
+    </div>
+</header>
+<div class="container">
+   <h4> join our gym in bangalore</h4>
+   <form action="noaction.php">
+    <div class="formgroup">
+        <input type="txt" name="" placeholder="enter ur name">
+    </div>
+    <div class="formgroup">
+        <input type="txt" name="" placeholder="enter ur email">
+    </div>
+    <div class="formgroup">
+        <input type="txt" name="" placeholder="enter ur age">
+    </div>
+    <div class="formgroup">
+        <input type="txt" name="" placeholder="enter ur gender">
+    </div>
+    <button class="btn">submit</button>
+   </form>
+</div>
+
+</body>
+</html>
